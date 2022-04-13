@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <div ng-app="Mymodule" ng-controller="myCtrl">
+<body ng-app="Mymodule" >
+    <div ng-controller="myCtrl">
         <h1>Controller</h1>
+        {{firstName}}
+        <hr>
+        {{lastName}}
+
+    </div>
+
+
+    <div ng-controller="myCtrla">
+        <h1>Controller1</h1>
         {{firstName}}
         <hr>
         {{lastName}}
