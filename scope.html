@@ -1,28 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="Mymodule">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body ng-app="Mymodule" >
-    <div ng-controller="myCtrl">
-        <h1>Controller</h1>
-        {{firstName}}
-        <hr>
-        {{lastName}}
+<body ng-controller="myCtrl" >
 
-    </div>
+    <!-- {{name | orderBy}}
+    {{stu_name | orderBy}} -->
+
+    <!-- <ol>
+        <li ng-repeat = "a in stu_name">
+            {{a | orderBy: '-'}}
+        </li>
+    </ol> -->
+
+    <!-- <table>
+        <tr>
+            <th>Id</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+
+        <tr ng-repeat = "a in detail | orderBy : 'id' : '-' ">
+            <td>{{a.id }}</td>
+            <td>{{a.email}}</td>
+            <td>{{a.pass}}</td>
+        </tr>
+    </table> -->
 
 
-    <div ng-controller="myCtrla">
-        <h1>Controller1</h1>
-        {{firstName}}
-        <hr>
-        {{lastName}}
+    <!-- <table>
+        <tr>
+            <th>Model</th>
+            <th>Price</th>
+            <th>Camera</th>
+            <th>Brand</th>
+        </tr>
 
-    </div>
+
+        <tr ng-repeat = "a in mob_detail ">
+            <td>{{a.Model }}</td>
+            <td>{{a.price}}</td>
+            <td>{{a.brand}}</td>
+        </tr>
+    </table> -->
+
+    <!-- {{name | limitTo : 3}}
+    {{name | limitTo : 3:2}}
+    {{name | limitTo : -2}}
+    {{val | limitTo : 2}} -->
+
+    <!-- <ol>
+        <li ng-repeat = "a in stu_name | limitTo: 4">
+            {{a | limitTo : -3}}
+        </li>
+    </ol> -->
+
+     <!-- task 2 :- DDl 1,2 ,3 ,4,5, 0,-1, -2...  -->
+     <!-- var n = window.prompt("Enter no. : "); -->
+     <ol>
+         <li ng-repeat = "a in data | limitTo: 3 ">
+             {{a}}
+        </li>
+     </ol>
 
     <script src="node_modules/angular/angular.min.js" ></script>
     <script src="scope.js"></script>
